@@ -754,6 +754,12 @@
             .footer-content {
                 grid-column: span 6;
             }
+            .course-card,.testimonial-card,.hero-form,.feature-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     /* banner media queries */
     /* Medium Devices (Tablets) */
@@ -842,15 +848,7 @@
             }
         }
 /* 
-        @media (max-width:580px) {
-          .logo ,.logo span{
-            font-size: 1.5rem;
-          }
-          .nav-links{
-            display: flex;
-            flex-direction: column;
-          }
-    } */
+        
         /* Tablets & Medium Screens */
         @media (max-width: 792px) {
             .logos-slide {
