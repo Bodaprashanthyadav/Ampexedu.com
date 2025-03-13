@@ -4,15 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ampex Education - Premier Institute for Digital Marketing Courses. Get industry-ready skills and placement assistance.">
-    <meta name="keywords" content="Top Digital Marketing Courses in Bangalore,Best Digital Marketing Courses in Bangalore ,SEO Training Bangalore, Social Media Marketing Bangalore, PPC Advertising Bangalore, Best Digital Marketing Institute Bangalore, Ampex Education Bangalore">
-    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D560BAQGdqDEY9WLQZQ/company-logo_200_200/B56ZUanJNLHQAI-/0/1739908224385/ampexedu_logo?e=1749686400&v=beta&t=_di7FkYf_WQJXO4-vuM4xnT1Gv7VjkcIMBwFFi6q5kM" />
+    <meta name="description"
+        content="Ampex Education - Premier Institute for Digital Marketing Courses. Get industry-ready skills and placement assistance.">
+    <meta name="keywords"
+        content="Top Digital Marketing Courses in Bangalore,Best Digital Marketing Courses in Bangalore ,SEO Training Bangalore, Social Media Marketing Bangalore, PPC Advertising Bangalore, Best Digital Marketing Institute Bangalore, Ampex Education Bangalore">
+    <link rel="icon"
+        href="https://media.licdn.com/dms/image/v2/D560BAQGdqDEY9WLQZQ/company-logo_200_200/B56ZUanJNLHQAI-/0/1739908224385/ampexedu_logo?e=1749686400&v=beta&t=_di7FkYf_WQJXO4-vuM4xnT1Gv7VjkcIMBwFFi6q5kM" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Ampex Education - Digital Marketing Courses</title>
+
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-978ECJZGXB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-978ECJZGXB');
+    </script>
+
     <style>
         /* Global Styles */
         :root {
@@ -178,7 +192,7 @@
             left: 0;
             right: 0;
             z-index: 1000;
-           
+
         }
 
         .navbar {
@@ -186,7 +200,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
-            
+
         }
 
         .logo {
@@ -195,8 +209,8 @@
             color: var(--primary-color);
             display: flex;
             align-items: center;
-           margin: -0.4rem;
-           
+            margin: -0.4rem;
+
         }
 
         .logo span {
@@ -323,8 +337,9 @@
 
         input::placeholder {
             color: #0f172a !important;
-            font-weight: 450 ;
+            font-weight: 450;
         }
+
         .form-label {
             display: block;
             margin-bottom: 0.5rem;
@@ -348,8 +363,8 @@
             color: #fdc800;
         }
 
-        
-      /* banner section */
+
+        /* banner section */
         .stats-list {
             background-color: #fdc800;
             color: white;
@@ -369,17 +384,20 @@
 
         }
 
-        .stats-value,.stats-title {
+        .stats-value,
+        .stats-title {
             margin: 0;
             padding: 0;
         }
-        .stats-value{
+
+        .stats-value {
             font-weight: bold;
         }
-        .stats-title{
+
+        .stats-title {
             font-weight: 500;
         }
-        
+
         /* Features Section */
         .features {
             background-color: var(--light-color);
@@ -472,10 +490,6 @@
             font-size: 0.79rem;
         }
 
-        .course-highlights span {
-            display: flex;
-
-        }
 
         /* Testimonials Section */
         .testimonials {
@@ -692,13 +706,74 @@
 
         }
 
+        /*  footer- terms&policies  */
+
+        .footer-term-policies {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .footer-term-policies h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-term-policies h3::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary-color);
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .footer-policylinks {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0;
+        }
+
+        .footer-policylinks li {
+            display: inline-block;
+        }
+
+        .footer-policylinks a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-policylinks a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
         .copyright {
             text-align: center;
             margin-top: 1rem;
             padding-top: 1rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #cbd5e1;
+        }
 
+        /*  footer- terms&policies  */
+        @media screen and (max-width: 480px) {
+            .footer-policylinks {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .footer-policylinks li {
+                display: block;
+                margin: 5px;
+            }
         }
 
         /* WhatsApp & Chatbot */
@@ -735,7 +810,8 @@
         .chatbot-btn:hover {
             transform: scale(1.1);
         }
-       
+
+
         /* Responsive Styles */
         @media (max-width: 992px) {
 
@@ -754,66 +830,76 @@
             .footer-content {
                 grid-column: span 6;
             }
-           
+
         }
+
         @media (max-width:480px) {
-            .course-card,.testimonial-card,.hero-form,.feature-card{
-               margin-right: 1rem;
+
+            .course-card,
+            .testimonial-card,
+            .hero-form,
+            .feature-card {
+                margin-right: 1rem;
             }
         }
+
         @media (max-width:480px) {
-            .logo,.logo span{
+
+            .logo,
+            .logo span {
                 font-size: 1.5rem;
             }
-            
+
         }
-    /* banner media queries */
-    /* Medium Devices (Tablets) */
-@media (max-width: 991px) {
-    .stats-list {
-        flex-wrap: wrap;
-        padding: 10px;
-    }
 
-    .stats-item {
-        width: 45%;
-        margin: 15px 0;
-    }
-}
+        /* banner media queries */
+        /* Medium Devices (Tablets) */
+        @media (max-width: 991px) {
+            .stats-list {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
 
-/* Small Devices (Mobile Phones) */
-@media (max-width: 767px) {
-    .stats-list {
-        flex-direction: column;
-        padding: 20px 0;
-    }
+            .stats-item {
+                width: 45%;
+                margin: 15px 0;
+            }
+        }
 
-    .stats-item {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
+        /* Small Devices (Mobile Phones) */
+        @media (max-width: 767px) {
+            .stats-list {
+                flex-direction: column;
+                padding: 20px 0;
+            }
 
-    .stats-value {
-        font-size: 1.5rem;
-    }
+            .stats-item {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
 
-    .stats-title {
-        font-size: 1rem;
-    }
-}
+            .stats-value {
+                font-size: 1.5rem;
+            }
 
-/* Extra Small Devices */
-@media (max-width: 480px) {
-    .stats-value {
-        font-size: 1.3rem;
-    }
+            .stats-title {
+                font-size: 1rem;
+            }
+        }
 
-    .stats-title {
-        font-size: 0.9rem;
-    }
-}
-          /* Header section */
+        /* Extra Small Devices */
+        @media (max-width: 480px) {
+            .stats-value {
+                font-size: 1.3rem;
+            }
+
+            .stats-title {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Header section */
 
         @media (max-width: 768px) {
             .mobile-menu-btn {
@@ -821,20 +907,22 @@
             }
 
             .nav-links {
-            position: fixed;
-            top: 96px;
-            right: -250px; /* Hidden Off-Screen (Right Side) */
-            width: 250px;
-            height: 45vh;
-            background:white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: baseline;
-            transition: right 0.5s ease;
+                position: fixed;
+                top: 96px;
+                right: -250px;
+                /* Hidden Off-Screen (Right Side) */
+                width: 250px;
+                height: 45vh;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: baseline;
+                transition: right 0.5s ease;
             }
+
             .nav-links.active {
-               right: 0;
+                right: 0;
             }
 
             .nav-links li {
@@ -852,8 +940,8 @@
                 font-size: 2.5rem;
             }
         }
-/* 
-        
+
+
         /* Tablets & Medium Screens */
         @media (max-width: 792px) {
             .logos-slide {
@@ -910,6 +998,65 @@
             }
         }
 
+        /* footer mediqueries */
+        @media screen and (max-width: 580px) {
+
+            /* Use 580px for mobile responsiveness */
+            .footer {
+                text-align: center;
+            }
+
+            .grid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                text-align: center;
+                width: 100%;
+            }
+
+            .footer-title {
+                text-align: center;
+            }
+
+            .footer-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .footer-links {
+                padding: 0;
+                text-align: center;
+            }
+
+            .footer-links li {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-policylinks {
+                text-align: center;
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer-policylinks li {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
 
 
         /* Animations */
@@ -940,7 +1087,6 @@
             }
 
         }
-
     </style>
 </head>
 
@@ -963,7 +1109,7 @@
                 <ul class="nav-links" id="navlinks">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#courses">Courses</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/AboutUs.html">About Us</a></li>
                     <li><a href="/Webiner.html" target="_parent">webinar</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -997,29 +1143,34 @@
                 <div class="hero-form">
                     <h3>Enroll and Start learning</h3>
                     <p>Sign up & Get a Free Demo Lectures</p>
-                    <form  action="http://localhost:5500/usersdetails" method="post">
+                    <form action="http://localhost:5500/usersdetails" method="post">
                         <div class="form-group">
-                            <label hidden  class="form-label" for="name">Full Name</label>
-                            <input type="text" name="fullname" class="form-control" id="name" placeholder=" Full Name" required>
+                            <label hidden class="form-label" for="name">Full Name</label>
+                            <input type="text" name="fullname" class="form-control" id="name" placeholder=" Full Name"
+                                required>
                         </div>
                         <div class="form-group">
                             <label hidden class="form-label" for="email">Email Address</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Address" required>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Address"
+                                required>
                         </div>
                         <div class="form-group">
                             <label hidden class="form-label" for="phone">Phone Number</label>
-                            <input type="tel" name="mobile" class="form-control" id="phone" placeholder="Mobile Number" required>
+                            <input type="tel" name="mobile" class="form-control" id="phone" placeholder="Mobile Number"
+                                required>
                         </div>
                         <div class="form-group">
-                            <label  class="form-label" for="course">Course Interested In</label>
+                            <label class="form-label" for="course">Course Interested In</label>
                             <select class="form-control" id="course" name="courseInterested">
                                 <option value="">Select a course</option>
-                                <option value="Foundation in Digital Marketing" >Foundation in Digital Marketing</option>
-                                <option value="Skill-degree in Digital Marketing">Skill-degree in Digital Marketing</option>
+                                <option value="Foundation in Digital Marketing">Foundation in Digital Marketing</option>
+                                <option value="Skill-degree in Digital Marketing">Skill-degree in Digital Marketing
+                                </option>
                                 <option value="Master in Digital Marketing">Master in Digital Marketing </option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;" onclick="formDataSubmit()">Enroll Now</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;"
+                            onclick="formDataSubmit()">Enroll Now</button>
                     </form>
                 </div>
             </div>
@@ -1046,7 +1197,7 @@
                     <p class="stats-title">Hiring Companies</p>
                 </li>
                 <li class="stats-item">
-                    <h2 class="stats-value" ><span data-target="500">0</span>+</h2>
+                    <h2 class="stats-value"><span data-target="500">0</span>+</h2>
                     <p class="stats-title">Started Freelancing</p>
                 </li>
 
@@ -1270,28 +1421,31 @@
                     </div>
                     <div class="modal-body">
                         <!-- Bootstrap Model Form -->
-                        <form  action="http://localhost:5500/usersdetails" method="post">
+                        <form action="http://localhost:5500/usersdetails" method="post">
                             <div class="mb-3">
                                 <label for="model-name" class="form-label">Name</label>
-                                <input type="text" name="fullname" class="form-control" id="model-name" style="height: 40px;"
-                                    placeholder="Enter Name" required>
+                                <input type="text" name="fullname" class="form-control" id="model-name"
+                                    style="height: 40px;" placeholder="Enter Name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="mode-email" class="form-label">Email</label>
-                                <input type="email" name="email" class="form-control" id="mode-email" style="height: 40px;"
-                                    placeholder="Enter mail" required>
+                                <input type="email" name="email" class="form-control" id="mode-email"
+                                    style="height: 40px;" placeholder="Enter mail" required>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="model-course">Course Interested In</label>
                                 <select class="form-control" name="courseInterested" id="model-course"
                                     style="height: 40px; font-size: 16px; padding: 5px;">
                                     <option value="">Select a course</option>
-                                    <option value="Foundation in Digital Marketing">Foundation in Digital Marketing</option>
-                                    <option value="Skill-degree in Digital Marketing">Skill-degree in Digital Marketing</option>
+                                    <option value="Foundation in Digital Marketing">Foundation in Digital Marketing
+                                    </option>
+                                    <option value="Skill-degree in Digital Marketing">Skill-degree in Digital Marketing
+                                    </option>
                                     <option value="Master in Digital Marketing">Master in Digital Marketing </option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100" onclick="formDataSubmit()">Request Course Details</button>
+                            <button type="submit" class="btn btn-primary w-100" onclick="formDataSubmit()">Request
+                                Course Details</button>
                         </form>
                     </div>
                 </div>
@@ -1349,16 +1503,20 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-content">
-                <h3 class="footer-title">Terms & Policies</h3>
-                <ul class="footer-links">
+
+            <div class="footer-term-policies">
+                <div>
+                    <h3>Terms & Policies</h3>
+                </div>
+                <ul class="footer-policylinks">
                     <li><a href="/TermsAndConditions.html">Terms and Conditions </a></li>
                     <li><a href="/PaymentTermsAndRefundPolicy.html">Payment Terms and Refund Policy </a></li>
                     <li><a href="/PrivacyPolicy.html"> Privacy Policy </a></li>
                 </ul>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Ampex Education. All Rights Reserved.</p>
+                <div class="copyright">
+                    <p>&copy; 2025 Ampex Education. All Rights Reserved.</p>
+
+                </div>
             </div>
         </div>
     </footer>
@@ -1376,72 +1534,72 @@
             alt="" width='50px' style="border-radius: 50%;" /></a>
     <!-- JavaScript -->
     <script>
-   //  hero-section-formdetals and model(popup from) details
-function formDataSubmit (){
-    alert('Details Received Thank You! We Get Back to You Soon!')
-}
+        //  hero-section-formdetals and model(popup from) details
+        function formDataSubmit() {
+            alert('Details Received Thank You! We Get Back to You Soon!')
+        }
 
         // Menubar-header section
-        function menubar(){
-         var x=   document.getElementById('navlinks').classList.toggle('active')
-         console.log(x)
-         if(x==true){
-            document.getElementById('menuIcon').innerHTML='✖'
-         }
-         else{
-            document.getElementById('menuIcon').innerHTML='☰'
+        function menubar() {
+            var x = document.getElementById('navlinks').classList.toggle('active')
+            console.log(x)
+            if (x == true) {
+                document.getElementById('menuIcon').innerHTML = '✖'
+            }
+            else {
+                document.getElementById('menuIcon').innerHTML = '☰'
 
-         }
-         
-        } 
+            }
+
+        }
         document.querySelectorAll('#navlinks a').forEach(link => {
-    link.addEventListener('click', () => {
-     document.getElementById('navlinks').classList.remove('active')
-     document.getElementById('menuIcon').innerHTML='☰'
-     console.log(y)
-    });
-});  
-     
-        
+            link.addEventListener('click', () => {
+                document.getElementById('navlinks').classList.remove('active')
+                document.getElementById('menuIcon').innerHTML = '☰'
+                console.log(y)
+            });
+        });
+
+
 
         // banner-section counter
         // stats-list 
         document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".stats-value span");
-    let started = false;
+            const counters = document.querySelectorAll(".stats-value span");
+            let started = false;
 
-    function startCounter() {
-        counters.forEach(counter => {
-            const target = +counter.getAttribute("data-target");
-            let count = 0;
-            const increment = target / 120; // Adjust speed dynamically
+            function startCounter() {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute("data-target");
+                    let count = 0;
+                    const increment = target / 120; // Adjust speed dynamically
 
-            const updateCount = () => {
-                if (count < target) {
-                    count += increment;
-                    counter.innerText = Math.ceil(count);
-                    setTimeout(updateCount, 30);
-                } else {
-                    counter.innerText = target;
+                    const updateCount = () => {
+                        if (count < target) {
+                            count += increment;
+                            counter.innerText = Math.ceil(count);
+                            setTimeout(updateCount, 30);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            }
+
+            function handleScroll() {
+                const bannerSection = document.querySelector(".banner");
+                const bannerPosition = bannerSection.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+
+                if (bannerPosition < screenPosition && !started) {
+                    startCounter();
+                    started = true;
                 }
-            };
-            updateCount();
+            }
+
+            window.addEventListener("scroll", handleScroll);
         });
-    }
-
-    function handleScroll() {
-        const bannerSection = document.querySelector(".banner");
-        const bannerPosition = bannerSection.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.2;
-
-        if (bannerPosition < screenPosition && !started) {
-            startCounter();
-            started = true;
-        }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-});
 
 
 
@@ -1449,8 +1607,3 @@ function formDataSubmit (){
 </body>
 
 </html>
-
-
-
-
-
