@@ -952,7 +952,7 @@
         <div class="headline">
             <marquee>
                 <p>
-                    Enroll Before 20 March to Claim Scholarship Worth ₹10,000
+                    ✨Enroll Before 20 March to Claim Scholarship Worth ₹10,000
                 </p>
                 <button>Enroll Now</button>
             </marquee>
@@ -1254,7 +1254,7 @@
             <div class="cta-buttons">
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal">
                     Get Course Details</button>
-                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                <a href="#home" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
@@ -1380,8 +1380,15 @@
             document.getElementById('menuIcon').innerHTML='☰'
 
          }
-        }
-   
+         
+        } 
+        document.querySelectorAll('#navlinks a').forEach(link => {
+    link.addEventListener('click', () => {
+     document.getElementById('navlinks').classList.remove('active')
+     document.getElementById('menuIcon').innerHTML='☰'
+     console.log(y)
+    });
+});  
        // model form section
         function handlesubmit(e) {
             e.preventDefault()
