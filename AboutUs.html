@@ -45,8 +45,10 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: var(--primary-color);
+    margin: 1rem;
+    
 }
 
 .container {
@@ -59,6 +61,7 @@ h1, h2, h3 {
 /* About Us Section */
 .About-us {
     margin-bottom: 3rem;
+    
 }
 
 .aboutus-banner {
@@ -80,9 +83,12 @@ h1, h2, h3 {
     padding: 2rem 0;
     flex-wrap: wrap;
 }
+.about-content {
+    text-align: center;
+}
 
 .about-img {
-    text-align: center;
+    margin: auto;
 }
 
 .about-img img {
@@ -100,26 +106,37 @@ h1, h2, h3 {
     margin-top: 0.5rem;
     border-radius: 6px;
 }
+.section-title::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: var(--gradient-primary);
+            margin-top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
 
 /* Why Choose Ampex Education? */
 .CAE {
-    padding: 3rem 0;
+    padding: 5rem 0;
     background: white;
 }
 
 .cae-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.cae-items {
+.cae-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-content: center;
 }
 
-.cae-items h3 {
+.cae-list h3 {
     background-color: var(--accent-color);
     padding: 1rem;
     text-align: center;
@@ -128,8 +145,7 @@ h1, h2, h3 {
 }
 
 .CAE ul {
-    list-style: inside;
-    padding: 1rem;
+    padding: 1rem; 
 }
 
 .entrepreneurs,
@@ -144,50 +160,92 @@ h1, h2, h3 {
     box-shadow: var(--box-shadow);
 }
 
-/* Center the last item in the second row */
 .students {
     grid-column: span 2;
     margin: auto;
-    text-align: center;
+    
+}
+.students ul{
+    text-align: left;
 }
 
+
 /* Our Commitment Section */
-.our-commitment {
+.commitment-section {
     background: var(--gradient-secondary);
     padding: 3rem 0;
     text-align: center;
     color: white;
     border-radius: 10px;
     margin-top: 3rem;
+    text-align: center;
 }
 
-.our-commitment h1 {
-    margin-bottom: 1rem;
+.commitment-section h1 {
+    margin-bottom: 2rem;
     font-size: 2rem;
 }
 
-.our-commitment p {
+.commitment-section p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: auto;
 }
 
-/* Responsive Styling */
-@media (max-width: 1024px) {
-    .cae-items {
-        grid-template-columns: 1fr;
+
+  /* cta,call to action section */
+
+.cta-banner {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 900px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+/* Headline Text */
+.cta-banner p {
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+}
+
+
+@media (max-width: 900px) {
+    .cae-list {
+        grid-template-columns: 1fr;  /* Ensures single column layout */
+        gap: 1.5rem;
     }
 
     .students {
-        grid-column: span 1;
+        grid-column: span 1 !important; /* Ensure it spans only one column */
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* Fix for 700px - 900px */
+@media (min-width: 700px) and (max-width: 900px) {
+    .cae-list {
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout for better spacing */
     }
 
-    .about-content {
-        flex-direction: column;
+    .students {
+        grid-column: span 2; /* Centers it on the second row */
+        margin: auto;
         text-align: center;
     }
 }
 
+/* General Responsive Styling */
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
@@ -198,7 +256,7 @@ h1, h2, h3 {
         font-size: 1.5rem;
     }
 
-    .cae-items {
+    .cae-list {
         grid-template-columns: 1fr;
     }
 
@@ -208,16 +266,12 @@ h1, h2, h3 {
 }
 
 
-/* Center the last item in the second row */
-.students {
-    grid-column: span 2;
-    margin: auto;
-    text-align: center;
-}
+
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    .cae-items {
+    .cae-list {
         grid-template-columns: 1fr;
     }
 
@@ -225,6 +279,27 @@ h1, h2, h3 {
         grid-column: span 1;
     }
 }
+
+.about-img,.aboutus-banner,.section-title,.cae-list,.commitment-section,.commitment-section p,.cta-banner,.entrepreneurs,.entrepreneurs ul,.freelancers,.freelancers ul,.students,.students ul{
+           animation: fade linear;
+            animation-timeline: view();
+            animation-range-start: 0%;
+            animation-range-end: 30%;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
 
     </style>
 </head>
@@ -238,17 +313,17 @@ h1, h2, h3 {
             </div>
             <div class="about-content">
                 <div>
-                    <h1>Wellcome to Ampex Education</h1>
+                    <h1 class="section-title">Wellcome to Ampex Education</h1>
                     <p>At <b>Ampex Education</b>, we are dedicated to empowering individuals with the skills and
                         knowledge necessary to
-                        excel in today's digital landscape. Our comprehensive programs in Digital Marketing, Data
-                        Science, and
-                        UI/UX Design are meticulously crafted to bridge the gap between theoretical concepts and
+                        excel in today's digital landscape. Our comprehensive programs in<b> Digital Marketing, Data
+                        Science,</b> and
+                        <b>UI/UX Design </b>are meticulously crafted to bridge the gap between theoretical concepts and
                         practical
                         applications, ensuring our students are well-prepared for real-world challenges.</p>
                 </div>
                 <div class="about-img">
-                    <img src="https://skillcircle.b-cdn.net/wp-content/uploads/2024/03/Award.webp" alt="" width="400vh">
+                    <img src="https://skillcircle.b-cdn.net/wp-content/uploads/2024/03/Award.webp" alt="achievement-img" width="400vh">
                     <div >
                         <h4>The Best Education Company for 2025</h4>
                     </div>
@@ -261,9 +336,9 @@ h1, h2, h3 {
     <section class="CAE">
         <div class="container">
             <div class="cae-header">
-                <h1>Why Choose Ampex Education?</h1>
+                <h1 class="section-title">Why Choose Ampex Education?</h1>
             </div>
-            <div class="cae-items">
+            <div class="cae-list">
                 <div class="entrepreneurs">
                     <div>
                         <h3>For Entrepreneurs & Business Owners</h3>
@@ -300,7 +375,7 @@ h1, h2, h3 {
                     <div>
                         <h3>For Students</h3>
                     </div>
-                    <div class="">
+                    <div >
                         <ul>
                             <li>Instruction from certified trainers who are experts in their respective fields</li>
                             <li>Development of personal websites during training to apply and showcase your learning.
@@ -315,12 +390,12 @@ h1, h2, h3 {
             </div>
         </div>
     </section>
-
-    <!-- our commitment -->
-    <section class="our-commitment">
+    
+    <!-- our commitment section -->
+    <section class="commitment-section">
         <div class="container">
-            <div>
-                <h1>Our Commitment</h1>
+            <div >
+                <h1 class="section-title">Our Commitment</h1>
             </div>
             <div>
                 <p>
@@ -330,12 +405,30 @@ h1, h2, h3 {
                     job-ready but also capable of driving innovation in their respective fields.
                 </p>
             </div>
-            <div>
+        </div>
+    </section>
+       <!-- cta ,Call-to-action -->
+        <section class="cta">
+            <div class="cta-banner">
                 <p>Join us at Ampex Education and take the first step towards unlocking your potential in the dynamic
                     world of digital skills</p>
             </div>
-        </div>
-    </section>
+        </section>
+    
+          <section>
+            <!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+
+          </section>
+<script>
+    // Fetch and insert the footer
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+</script>
 </body>
 
 </html>
