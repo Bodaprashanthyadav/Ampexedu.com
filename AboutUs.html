@@ -5,61 +5,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ampex Education - AboutUs</title>
-    <link rel="icon"
-        href="https://media.licdn.com/dms/image/v2/D560BAQGdqDEY9WLQZQ/company-logo_200_200/B56ZUanJNLHQAI-/0/1739908224385/ampexedu_logo?e=1749686400&v=beta&t=_di7FkYf_WQJXO4-vuM4xnT1Gv7VjkcIMBwFFi6q5kM" />
+    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D560BAQGdqDEY9WLQZQ/company-logo_200_200/B56ZUanJNLHQAI-/0/1739908224385/ampexedu_logo?e=1749686400&v=beta&t=_di7FkYf_WQJXO4-vuM4xnT1Gv7VjkcIMBwFFi6q5kM" />
 
     <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-978ECJZGXB"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() { dataLayer.push(arguments); } 
         gtag('js', new Date());
 
         gtag('config', 'G-978ECJZGXB');
     </script>
 
     <style>
-         /* Global Styles */
-         :root {
-            --primary-color: #1e3a8a;
-            --secondary-color: #3b82f6;
-            --accent-color: #60a5fa;
-            --light-color: #f0f9ff;
-            --dark-color: #0f172a;
-            --success-color: #10b981;
-            --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-            --gradient-secondary: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-            --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* Global Styles */
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --accent-color: #60a5fa;
+    --light-color: #f0f9ff;
+    --dark-color: #0f172a;
+    --success-color: #10b981;
+    --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    --gradient-secondary: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6rem;
-            overflow-x: hidden;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* About-us section */
-        .About-us {}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
+h1, h2, h3 {
+    color: var(--primary-color);
+}
 
-        }
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
-        h1 {
-            text-align: center;
-            margin: 1rem;
-        }
+/* About Us Section */
+.About-us {
+    margin-bottom: 3rem;
+}
+
+.aboutus-banner {
+    background: var(--gradient-primary);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    text-align: center;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.about-img h4 {
+    background: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+}
+
+/* Why Choose Ampex Education? */
+.CAE {
+    padding: 3rem 0;
+    background: white;
+}
+
+.cae-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cae-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cae-items h3 {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.CAE ul {
+    list-style: inside;
+    padding: 1rem;
+}
+
+.entrepreneurs,
+.freelancers,
+.students {
+    background: var();
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: var(--dark-color);
+    width: 100%;
+    max-width: 30rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* Center the last item in the second row */
+.students {
+    grid-column: span 2;
+    margin: auto;
+    text-align: center;
+}
+
+/* Our Commitment Section */
+.our-commitment {
+    background: var(--gradient-secondary);
+    padding: 3rem 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.our-commitment h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.our-commitment p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .cae-items {
+        grid-template-columns: 1fr;
+    }
+
+    .students {
+        grid-column: span 1;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .aboutus-banner {
+        height: 150px;
+        font-size: 1.5rem;
+    }
+
+    .cae-items {
+        grid-template-columns: 1fr;
+    }
+
+    .students {
+        grid-column: span 1;
+    }
+}
+
+
+/* Center the last item in the second row */
+.students {
+    grid-column: span 2;
+    margin: auto;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .cae-items {
+        grid-template-columns: 1fr;
+    }
+
+    .students {
+        grid-column: span 1;
+    }
+}
+
     </style>
 </head>
 
@@ -67,24 +233,40 @@
     <!-- About-us section -->
     <section class="About-us">
         <div class="container">
-            <h1>About Us – Ampex Education</h1>
-            <p>At Ampex Education, we are dedicated to empowering individuals with the skills and knowledge necessary to
-                excel in today's digital landscape. Our comprehensive programs in Digital Marketing, Data Science, and
-                UI/UX Design are meticulously crafted to bridge the gap between theoretical concepts and practical
-                applications, ensuring our students are well-prepared for real-world challenges.</p>
+            <div class="aboutus-banner">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-content">
+                <div>
+                    <h1>Wellcome to Ampex Education</h1>
+                    <p>At <b>Ampex Education</b>, we are dedicated to empowering individuals with the skills and
+                        knowledge necessary to
+                        excel in today's digital landscape. Our comprehensive programs in Digital Marketing, Data
+                        Science, and
+                        UI/UX Design are meticulously crafted to bridge the gap between theoretical concepts and
+                        practical
+                        applications, ensuring our students are well-prepared for real-world challenges.</p>
+                </div>
+                <div class="about-img">
+                    <img src="https://skillcircle.b-cdn.net/wp-content/uploads/2024/03/Award.webp" alt="" width="400vh">
+                    <div >
+                        <h4>The Best Education Company for 2025</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Why Choose Ampex Education? -->
-    <section class="">
+    <section class="CAE">
         <div class="container">
-            <div class="">
+            <div class="cae-header">
                 <h1>Why Choose Ampex Education?</h1>
             </div>
-            <div >
+            <div class="cae-items">
                 <div class="entrepreneurs">
                     <div>
-                        <h3>For Entrepreneurs & Business Owners:</h3>
+                        <h3>For Entrepreneurs & Business Owners</h3>
                     </div>
                     <div>
                         <ul>
@@ -99,8 +281,8 @@
                     </div>
                 </div>
                 <div class="freelancers">
-                    <div >
-                        <h3>For Freelancers & Job Seekers:</h3>
+                    <div>
+                        <h3>For Freelancers & Job Seekers</h3>
                     </div>
                     <div class="">
                         <ul>
@@ -115,8 +297,8 @@
                     </div>
                 </div>
                 <div class="students">
-                    <div >
-                        <h3>For Students:</h3>
+                    <div>
+                        <h3>For Students</h3>
                     </div>
                     <div class="">
                         <ul>
