@@ -60,20 +60,37 @@ h1, h2 {
     border-radius: 8px;
     text-align: center;
 }
-@media (max-width:580px) {
-    .h1,h2{
-        font-size: medium;
-       
-    }
+@media (max-width: 768px) {
     .terms-conditions-banner {
-        font-size: medium;
-        height: 150px;
-      
+        font-size: 1.5rem;
+        height: 200px;
     }
-    .terms-conditions p{
-        margin: auto;
+
+    .terms-conditions p {
+        margin-left: 1rem;
+        font-size: 0.9rem;
     }
 }
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2rem;
+        list-style: none;
+    }
+
+    .terms-conditions-banner {
+        font-size: 1.2rem;
+        height: 120px;
+        margin-top: 4rem;
+    }
+
+    .terms-conditions p {
+        margin-left: 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+  
     </style>
 </head>
 <body>
