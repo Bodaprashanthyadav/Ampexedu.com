@@ -18,56 +18,80 @@
 </script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
+        
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
         h1, h2 {
-            color: #0275d8;
+            color: var(--primary-color);
+            margin: 1rem;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            position: relative;
-            margin-top: 20px;
+        .privacy-policy p ,ul {
+        margin-left: 3rem;
         }
-        footer a {
-            color: #f4f4f4;
-            text-decoration: none;
+       
+        .privacy-policy-banner{
+    background: var(--gradient-primary);
+    height: 300px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+
         }
+        @media (max-width:520px) {
+    .h1,h2{
+        font-size: medium;
+    }
+
+    .privacy-policy-banner{
+        font-size: medium;
+        height: 250px;
+    }
+    
+}
     </style>
 </head>
 <body>
+    <!-- header -->
     <section>
+        <div id="Header-placeholder"></div>
+    </section>
+    
+    <section class="privacy-policy">
     <div class="container">
+       <div class="privacy-policy-banner">
         <h1>Privacy Policy</h1>
+       </div>
         <p>At Ampex Education, we prioritize protecting your privacy. By accessing and using our website (<a href="https://ampexedu.com">https://ampexedu.com</a>), you agree to the practices described in this Privacy Policy.</p>
         
-        <h2>Consent</h2>
+        <h2>1. Consent</h2>
         <p>By using our website, you agree to this Privacy Policy and its terms.</p>
         
-        <h2>Collecting Information</h2>
+        <h2>2. Collecting Information</h2>
         <p>We are transparent about what personal information we collect and why. Any data requested will be clearly stated at the point of collection.</p>
         <p>When you contact us directly, we may collect your name, email, phone number, and other details.</p>
         <p>When registering for an account, we may ask for contact details such as name, company name, address, email, and phone number.</p>
         
-        <h2>Electronic Communications</h2>
+        <h2>3. Electronic Communications</h2>
         <p>When you visit our website or contact us, you consent to receive electronic communications via email, SMS, or RCS.</p>
         
-        <h2>How We Use Your Personal Information</h2>
+        <h2>4. How We Use Your Personal Information</h2>
         <ul>
             <li>Operation and maintenance of our website</li>
             <li>Enhancing user experience</li>
@@ -77,13 +101,16 @@
             <li>Preventing fraudulent activities</li>
         </ul>
         
-        <h2>Cookies and Log Files</h2>
+        <h2>5. Cookies and Log Files</h2>
         <p>We use cookies to store user preferences and log files to analyze visitor behavior.</p>
     </div>
     </section>
+
+    <!-- footer -->
+    <section>
+        <div id="footer-placeholder"></div>
+    </section>
     
-    <footer>
-        <p>&copy; 2025 Ampex Education | <a href="https://ampexedu.com">Visit Our Website</a></p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

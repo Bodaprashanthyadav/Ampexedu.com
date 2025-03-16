@@ -18,42 +18,70 @@
 </script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
+              
+              * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
+        
         h1, h2 {
-            color: #0275d8;
+            color: var(--primary-color);
+            margin: 1rem;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            position: relative;
-            margin-top: 20px;
+        .payment-refund_policy p,ul{
+            margin-left: 3rem;
+           
+           
         }
-        footer a {
-            color: #f4f4f4;
-            text-decoration: none;
+        .payment-refund_policy-banner{
+    background: var(--gradient-primary);
+    height: 300px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+
+        }
+        @media (max-width:520px){
+            .h1,h2 {
+                font-size: medium;
+                
+                
+            }
+        }
+        .payment-refund_policy-banner{
+            font-size: medium;
+            height: 250px;
+           
         }
     </style>
 </head>
 <body>
-    <section>
+     <!-- header -->
+     <section>
+        <div id="Header-placeholder"></div>
+    </section>
+
+    <section class="payment-refund_policy">
     <div class="container">
-        <h1>Payment Terms and Refund Policy</h1>
+        <div class="payment-refund_policy-banner">
+            <h1>Payment Terms and Refund Policy</h1>
+        </div>
         <h2>1. Payment Terms</h2>
         <ul>
             <li>Full payment for participation in a program is required at the time of registration unless otherwise agreed upon in writing by Ampex Education.</li>
@@ -74,12 +102,14 @@
                [<a href="mailto:info@ampexedu.com">  ✉️info@ampexedu.com  </a> 
               | <a href="tel:+91-8800860478">📞 +91-8800860478</a>]
              
-             </b>.</p>
+             </b></p>
     </div>
     </section>
     
-    <footer>
-        <p>&copy; 2025 Ampex Education | <a href="https://ampexedu.com">Visit Our Website</a></p>
-    </footer>
+    <!-- footer -->
+    <section>
+        <div id="footer-placeholder"></div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
