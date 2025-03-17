@@ -66,8 +66,39 @@ function formDataSubmit(event) {
     document.getElementById('heroform').reset()
 
 }
-function modelformDataSubmit() {
-    alert('form submitted sucessfull')
+function modelformDataSubmit(event) {
+    event.preventDefault()
+    var formdata = new FormData(event.target)
+    var formdetails = {}
+    formdata.forEach((key, value) => {
+        formdetails[value] = key
+    })
+    console.log(formdetails)
+    fetch('http://localhost:5500/usersdetails', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+
+        body: JSON.stringify(formdetails),
+
+    })
+        //response from server
+        .then(res => res.json())
+        .then(data => {
+            console.log(data, "data submitted success")
+
+            alert(`${data.msg}`)
+
+        })
+        //error from server during submitting data
+        .catch(err => {
+            console.log(err, "failed to submit data")
+
+            alert(`${err.msg}`)
+        })
+
+    //resetting form after submit
+    document.getElementById('heroform').reset()
+
 }
 
 
