@@ -1,29 +1,75 @@
 // header
 
-fetch('Header.html')
-         .then(res=>res.text())
-         .then(data=>{
-           document.getElementById('Header-placeholder').innerHTML=data
-      
-         })
-         .catch(error=>console.log('Error in loading Header'+error))
 
-  
+
+fetch('Header.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('Header-placeholder').innerHTML = data
+
+    })
+    .catch(error => console.log('Error in loading Header' + error))
+
+
 
 // footer  
 
 fetch("footer.html")
-.then(response => response.text())
-.then(data => {
-  document.getElementById("footer-placeholder").innerHTML = data;
-})
-.catch(error => console.error("Error loading footer:", error));
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
 
 
-  //  hero-section-formdetals and model(popup from) details
-  function formDataSubmit() {
-    alert('Details Received Thank You! We Get Back to You Soon!')
+//  hero-section-formdetals and model(popup from) details
+function formDataSubmit(event) {
+    event.preventDefault()
+    var formdata = new FormData(event.target)
+    var formdetails = {}
+    for (var [key, value] of formdata)
+        formdetails[key] = value
+    // console.log(form)
+    fetch('http://localhost:5500/usersdetails', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+
+        body: JSON.stringify(formdetails),
+
+    })
+        //response from server
+        .then(res => res.json())
+        .then(data => {
+            console.log(data, "data submitted success")
+
+            var alertbtn = document.getElementById('alert-btn')
+            alertbtn.style.display = 'block'
+            alertbtn.innerHTML = `${data.msg}`
+
+            setTimeout(() => {
+                alertbtn.style.display = 'none'
+            }, 4000)
+        })
+        //error from server during submitting data
+        .catch(err => {
+            console.log(err, "failed to submit data")
+
+            var alertbtn = document.getElementById('alert-btn')
+            alertbtn.style.display = 'block'
+            alertbtn.innerHTML = `${err.msg}`
+            setTimeout(() => {
+                alertbtn.style.display = 'none'
+            }, 4000)
+        })
+
+    // reset form after submit
+    document.getElementById('heroform').reset()
+
 }
+function modelformDataSubmit() {
+    alert('form submitted sucessfull')
+}
+
 
 // Menubar-header section
 function menubar() {
@@ -86,4 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", handleScroll);
 });
+
+
+
+
 
