@@ -70,11 +70,11 @@ function modelformDataSubmit(event) {
     event.preventDefault()
     var formdata = new FormData(event.target)
     var formdetails = {}
-    formdata.forEach((key, value) => {
-        formdetails[value] = key
+    formdata.forEach((value,key) => {
+        formdetails[key] = value
     })
     console.log(formdetails)
-    fetch('https://ampexedu-backend-server.onrender.com//usersdetails', {
+    fetch('https://ampexedu-backend-server.onrender.com/usersdetails', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
 
@@ -93,7 +93,7 @@ function modelformDataSubmit(event) {
         .catch(err => {
             console.log(err, "failed to submit data")
 
-            alert(`${err.msg}`)
+            alert(`${err.msg  || "Failed to submit data"}`)
         })
 
     //resetting form after submit
