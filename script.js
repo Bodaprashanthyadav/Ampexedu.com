@@ -48,7 +48,7 @@ function formDataSubmit(event) {
 
             setTimeout(() => {
                 alertbtn.style.display = 'none'
-            }, 4000)
+            }, 5000)
         })
         //error from server during submitting data
         .catch(err => {
@@ -59,7 +59,7 @@ function formDataSubmit(event) {
             alertbtn.innerHTML = `${err.msg}`
             setTimeout(() => {
                 alertbtn.style.display = 'none'
-            }, 4000)
+            }, 5000)
         })
 
     // reset form after submit
