@@ -30,7 +30,7 @@ function formDataSubmit(event) {
     for (var [key, value] of formdata)
         formdetails[key] = value
     // console.log(form)
-    fetch('http://localhost:5800/usersdetails', {
+    fetch('https://ampexedu-backend-server.onrender.com/usersdetails', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
 
@@ -44,7 +44,7 @@ function formDataSubmit(event) {
 
             var alertbtn = document.getElementById('alert-btn')
             alertbtn.style.display = 'block'
-            alertbtn.innerHTML = `${data.msg}`
+            alertbtn.innerHTML = `${data}`
 
             setTimeout(() => {
                 alertbtn.style.display = 'none'
@@ -74,7 +74,7 @@ function modelformDataSubmit(event) {
         formdetails[value] = key
     })
     console.log(formdetails)
-    fetch('http://localhost:5800/usersdetails', {
+    fetch('https://ampexedu-backend-server.onrender.com//usersdetails', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
 
