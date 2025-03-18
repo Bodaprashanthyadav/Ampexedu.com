@@ -44,7 +44,7 @@ function formDataSubmit(event) {
 
             var alertbtn = document.getElementById('alert-btn')
             alertbtn.style.display = 'block'
-            alertbtn.innerHTML = `${data}`
+            alertbtn.innerHTML = `${data.msg}`
 
             setTimeout(() => {
                 alertbtn.style.display = 'none'
