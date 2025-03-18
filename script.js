@@ -30,7 +30,7 @@ function formDataSubmit(event) {
     for (var [key, value] of formdata)
         formdetails[key] = value
     // console.log(form)
-    fetch('http://localhost:5500/usersdetails', {
+    fetch('http://localhost:5800/usersdetails', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
 
@@ -74,7 +74,7 @@ function modelformDataSubmit(event) {
         formdetails[value] = key
     })
     console.log(formdetails)
-    fetch('http://localhost:5500/usersdetails', {
+    fetch('http://localhost:5800/usersdetails', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
 
