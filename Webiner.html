@@ -21,6 +21,14 @@
 
     
     <style>
+         .container {
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 2rem;
+
+        }
+        
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
         
         body {
@@ -31,6 +39,7 @@
         
         .gradient-bg {
             background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            margin-top:5%;
         }
         
         .cta-button {
@@ -38,6 +47,9 @@
             transition: all 0.3s ease;
             transform: translateY(0);
             box-shadow: 0 4px 6px rgba(244, 63, 94, 0.25);
+        }
+        .cta-button a{
+            color: white;
         }
         
         .cta-button:hover {
@@ -111,9 +123,13 @@
     </style>
 </head>
 <body>
-    
+     <!-- header -->
+     <section>
+        
+        <div id="Header-placeholder"></div>
+    </section>
     <!-- Hero Section -->
-    <section class="gradient-bg text-white py-16 px-4 sm:px-6 lg:px-8">
+    <section class="gradient-bg text-white py-20 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-5xl">
             <div class="text-center mb-12">
                 <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
@@ -124,7 +140,7 @@
                 
                 <div class="bg-white bg-opacity-20 rounded-lg p-4 mb-8 inline-block">
                     <p class="text-lg md:text-xl">
-                        <i class="fas fa-calendar-alt mr-2"></i> <strong>Date & Time:</strong> March 23, 2025 • 3:00 PM IST
+                        <i class="fas fa-calendar-alt mr-2"></i> <strong>Date & Time:</strong> March 30, 2025 • 3:00 PM IST
                     </p>
                     <p class="text-lg md:text-xl mt-2">
                         <i class="fas fa-ticket-alt mr-2"></i> <strong>Entry Fee:</strong> ₹9 <span class="bg-red-500 px-2 py-1 rounded text-sm ml-2 animate-pulse">Limited Seats!</span>
@@ -484,7 +500,7 @@
                 <div class="mb-4 md:mb-0">
                     <h3 class="text-xl font-bold">Master Digital Marketing & Earn ₹50,000+ Monthly</h3>
                     <p class="text-gray-300">
-                        <i class="fas fa-calendar-alt mr-1"></i> March 23, 2025 • 3:00 PM IST
+                        <i class="fas fa-calendar-alt mr-1"></i> March 30, 2025 • 3:00 PM IST
                     </p>
                 </div>
                 <button class="cta-button text-white font-bold py-3 px-6 rounded-full">
@@ -497,7 +513,7 @@
     <!-- JavaScript for Countdown Timer -->
     <script>
         // Set the date we're counting down to (March 16, 2025 3:00 PM IST)
-        const countDownDate = new Date("March 23, 2025 15:00:00 GMT+0530").getTime();
+        const countDownDate = new Date("March 30, 2025 15:00:00 GMT+0530").getTime();
         
         // Update the countdown every 1 second
         const x = setInterval(function() {
@@ -531,5 +547,6 @@
 
         
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
