@@ -1,6 +1,5 @@
 📚 **Digital Marketing Training Institute Website**   (AmpexEducation)
 
-🚀 Built with ❤️ by Prashanth Yadav
 
 A modern, responsive website designed for a digital marketing training institute. Built using HTML, CSS, JavaScript, and Tailwind CSS, this project provides an engaging and informative platform for students and professionals looking to enhance their digital marketing skills.
 
