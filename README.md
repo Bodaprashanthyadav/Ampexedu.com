@@ -1,4 +1,4 @@
-📚 **Digital Marketing Training Institute Website**       
+📚 **Digital Marketing Training Institute Website**   (AmpexEducation)
 
 🚀 Built with ❤️ by Prashanth Yadav
 
@@ -6,7 +6,7 @@ A modern, responsive website designed for a digital marketing training institute
 
 🌐 **Live Website**
 
-**Vercel Deployment**: Ampex Educom
+**Vercel Deployment**: https://ampexeducom.vercel.app/
 
 **Official Domain**: www.ampexedu.com
 
