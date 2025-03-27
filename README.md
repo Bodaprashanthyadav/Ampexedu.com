@@ -1,51 +1,67 @@
-**Here this the Website Link** :https://ampexeducom.vercel.app/  check it      **...Buld with ❤️ By prashanth Yadav**
+📚 **Digital Marketing Training Institute Website**       
 
-**📚 Digital Marketing Training Institute Website**
+🚀 Built with ❤️ by Prashanth Yadav
 
-A modern, responsive website designed for a digital marketing training institute. Built using HTML, CSS, JavaScript, and Tailwind CSS, this project aims to offer an engaging and informative platform for potential students and professionals looking to enhance their digital marketing skills.
+A modern, responsive website designed for a digital marketing training institute. Built using HTML, CSS, JavaScript, and Tailwind CSS, this project provides an engaging and informative platform for students and professionals looking to enhance their digital marketing skills.
 
-**✨ Features:**
+🌐 **Live Website**
 
-📱 Responsive Design: Fully adaptable to different screen sizes.
+**Vercel Deployment**: Ampex Educom
 
-🎨 Interactive UI: Dynamic elements for better user engagement.
+**Official Domain**: www.ampexedu.com
 
-🎯 Modern Styling: Tailwind CSS for efficient and flexible styling.
+✨**Features**
 
-📖 Course Offerings: Information on various digital marketing courses like SEO, SEM, Social Media Marketing, and more.
+📱 Responsive Design: Fully adaptable across different screen sizes for seamless user experience.
 
-📩 Contact & Enrollment Forms: Easy communication and admission process.
+🎨 Interactive UI: Dynamic elements enhance user engagement.
 
+🎯 Modern Styling: Tailwind CSS ensures efficient and flexible styling.
 
-**🛠 Technologies Used**
+📖 Course Offerings: Detailed information on digital marketing courses including SEO, SEM, Social Media Marketing, and more.
 
-🏗 HTML: Structure of the website.
+📩 Contact & Enrollment Forms: Smooth communication and admission process.
 
-🎨 CSS & Tailwind CSS: Styling and responsiveness.
+🛠 Technologies Used
 
-🔥 JavaScript: Interactivity and animations.
+🏗 HTML: Provides the structure of the website.
 
-🏗 Installation & Setup
+🎨 CSS & Tailwind CSS: Handles styling and responsiveness.
 
-Clone the repository:
+🔥 JavaScript: Adds interactivity and animations.
+
+🚀 Installation & Setup
+
+To set up this project locally, follow these steps:
+
+1️⃣ **Clone the Repository:**
 
 git clone https://github.com/your-username/digital-marketing-training-institute.git
 
-Navigate to the project directory:
+2️⃣ Navigate to the Project Directory:
 
 cd digital-marketing-training-institute
 
-Open index.html in a browser.
+3️⃣ Open the Website in a Browser:
 
-📁 Folder Structure
+Simply open the index.html file in your preferred web browser.
 
-📂 digital-marketing-training-institute
+📂 **Folder Structure**
+
+📂 digital-marketing-training-institute (ampexedu.com)
  ├── 📁 assets (Images, icons, and other media)
  ├── 📄 index.html (Main landing page)
- ├── 📄 webiner.html (full details about training ,Demo ,ect)
+ ├── 📄 webiner.html (Details about training, demo, etc.)
+ ├── 📄 AboutUs.html (Information about the institute)
+ ├── 📄 Header.html (Website header component)
+ ├── 📄 footer.html (Footer section)
+ ├── 📄 PaymentTermsAndRefundPolicy.html (Payment and refund policies)
+ ├── 📄 PrivacyPolicy.html (Privacy policy of the website)
+ ├── 📄 TermsAndConditions.html (Terms and conditions)
 
-
-📝 License
+📝 **License**
 
 This project is open-source and available under the MIT License.
+
+🚀 Built with ❤️ by Prashanth Yadav
 
