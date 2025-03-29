@@ -49,6 +49,10 @@ function formDataSubmit(event) {
                 confirmButtonColor: "#3b82f6" ,
 
             });
+                //resetting form after submit
+    document.getElementById('heroform').reset()
+
+
         })
         //error from server during submitting data
         .catch(err => {
