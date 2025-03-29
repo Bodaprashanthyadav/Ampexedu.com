@@ -49,6 +49,8 @@ function formDataSubmit(event) {
                 confirmButtonColor: "#3b82f6" ,
 
             });
+            // reset form after submit
+             document.getElementById('heroform').reset()
         })
         //error from server during submitting data
         .catch(err => {
@@ -63,8 +65,7 @@ function formDataSubmit(event) {
 
         })
 
-    // reset form after submit
-    document.getElementById('heroform').reset()
+    
 
 }
 function modelformDataSubmit(event) {
@@ -93,6 +94,9 @@ function modelformDataSubmit(event) {
                 confirmButtonColor: "#3b82f6" ,
 
             });
+    //resetting form after submit
+    document.getElementById('heroform').reset()
+
 
         })
         //error from server during submitting data
@@ -107,9 +111,6 @@ function modelformDataSubmit(event) {
                 confirmButtonColor: "#ff6600" 
             });
         })
-
-    //resetting form after submit
-    document.getElementById('heroform').reset()
 
 }
 
