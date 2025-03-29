@@ -45,7 +45,9 @@ function formDataSubmit(event) {
             Swal.fire({
                 title: "Thank You!",
                 text: "We Will Get Back to You Soon!",
-                icon: "success"
+                icon: "success",
+                confirmButtonColor: "#3b82f6" ,
+
             });
         })
         //error from server during submitting data
@@ -87,7 +89,9 @@ function modelformDataSubmit(event) {
             Swal.fire({
                 title: "Thank You!",
                 text: "We Will Get Back to You Soon!",
-                icon: "success"
+                icon: "success",
+                confirmButtonColor: "#3b82f6" ,
+
             });
 
         })
