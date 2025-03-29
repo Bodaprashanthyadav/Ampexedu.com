@@ -1,5 +1,5 @@
-// header
 
+// header
 
 
 fetch('Header.html')
@@ -42,24 +42,23 @@ function formDataSubmit(event) {
         .then(data => {
             console.log(data, "data submitted success")
 
-            var alertbtn = document.getElementById('alert-btn')
-            alertbtn.style.display = 'block'
-            alertbtn.innerHTML = `${data.msg}`
-
-            setTimeout(() => {
-                alertbtn.style.display = 'none'
-            }, 6000)
+            Swal.fire({
+                title: "Thank You!",
+                text: "We Will Get Back to You Soon!",
+                icon: "success"
+            });
         })
         //error from server during submitting data
         .catch(err => {
             console.log(err, "failed to submit data")
+            Swal.fire({
+                title: "Enter a Valid Details",
+                text: "Something went wrong!",
+                icon: "error",
+                timer: "10000",
+                confirmButtonColor: "#3b82f6" ,
+            });
 
-            var alertbtn = document.getElementById('alert-btn')
-            alertbtn.style.display = 'block'
-            alertbtn.innerHTML = `${err.msg}`
-            setTimeout(() => {
-                alertbtn.style.display = 'none'
-            }, 6000)
         })
 
     // reset form after submit
@@ -70,7 +69,7 @@ function modelformDataSubmit(event) {
     event.preventDefault()
     var formdata = new FormData(event.target)
     var formdetails = {}
-    formdata.forEach((value,key) => {
+    formdata.forEach((value, key) => {
         formdetails[key] = value
     })
     console.log(formdetails)
@@ -85,15 +84,24 @@ function modelformDataSubmit(event) {
         .then(res => res.json())
         .then(data => {
             console.log(data, "data submitted success")
-
-            alert(`${data.msg}`)
+            Swal.fire({
+                title: "Thank You!",
+                text: "We Will Get Back to You Soon!",
+                icon: "success"
+            });
 
         })
         //error from server during submitting data
         .catch(err => {
             console.log(err, "failed to submit data")
 
-            alert(`${err.msg  || "Failed to submit data"}`)
+            Swal.fire({
+                title: "Enter a Valid Details",
+                text: "Something went wrong!",
+                icon: "error",
+                timer: "10000",
+                confirmButtonColor: "#ff6600" 
+            });
         })
 
     //resetting form after submit
