@@ -1,12 +1,11 @@
-📚 **Digital Marketing Training Institute Website**       
+📚 **Digital Marketing Training Institute Website**   (AmpexEducation)
 
-🚀 Built with ❤️ by Prashanth Yadav
 
 A modern, responsive website designed for a digital marketing training institute. Built using HTML, CSS, JavaScript, and Tailwind CSS, this project provides an engaging and informative platform for students and professionals looking to enhance their digital marketing skills.
 
 🌐 **Live Website**
 
-**Vercel Deployment**: Ampex Educom
+**Vercel Deployment**: https://ampexeducom.vercel.app/
 
 **Official Domain**: www.ampexedu.com
 
@@ -22,7 +21,7 @@ A modern, responsive website designed for a digital marketing training institute
 
 📩 Contact & Enrollment Forms: Smooth communication and admission process.
 
-🛠 Technologies Used
+🛠 **Technologies Used**
 
 🏗 HTML: Provides the structure of the website.
 
@@ -48,20 +47,19 @@ Simply open the index.html file in your preferred web browser.
 
 📂 **Folder Structure**
 
-📂 digital-marketing-training-institute (ampexedu.com)
- ├── 📁 assets (Images, icons, and other media)
- ├── 📄 index.html (Main landing page)
- ├── 📄 webiner.html (Details about training, demo, etc.)
- ├── 📄 AboutUs.html (Information about the institute)
- ├── 📄 Header.html (Website header component)
- ├── 📄 footer.html (Footer section)
- ├── 📄 PaymentTermsAndRefundPolicy.html (Payment and refund policies)
- ├── 📄 PrivacyPolicy.html (Privacy policy of the website)
- ├── 📄 TermsAndConditions.html (Terms and conditions)
+📂 digital-marketing-training-institute (ampexedu.com) <br/>
+ ├── 📁 assets (Images, icons, and other media)        <br/>
+ ├── 📄 index.html (Main landing page)                   <br/>
+ ├── 📄 webiner.html (Details about training, demo, etc.) <br/>
+ ├── 📄 AboutUs.html (Information about the institute)       <br/>
+ ├── 📄 Header.html (Website header component)            <br/>
+ ├── 📄 footer.html (Footer section)                        <br/>
+ ├── 📄 PaymentTermsAndRefundPolicy.html (Payment and refund policies)   <br/>
+ ├── 📄 PrivacyPolicy.html (Privacy policy of the website)              <br/>
+ ├── 📄 TermsAndConditions.html (Terms and conditions)               <br/>
 
 📝 **License**
 
-This project is open-source and available under the MIT License.
 
 🚀 Built with ❤️ by Prashanth Yadav
 
