@@ -67,8 +67,6 @@ function formDataSubmit(event) {
 
         })
 
-    // reset form after submit
-    document.getElementById('heroform').reset()
 
 }
 function modelformDataSubmit(event) {
