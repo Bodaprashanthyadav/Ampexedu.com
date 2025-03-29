@@ -51,6 +51,11 @@ function formDataSubmit(event) {
             });
             // reset form after submit
              document.getElementById('heroform').reset()
+
+                //resetting form after submit
+    document.getElementById('heroform').reset()
+
+
         })
         //error from server during submitting data
         .catch(err => {
@@ -65,7 +70,6 @@ function formDataSubmit(event) {
 
         })
 
-    
 
 }
 function modelformDataSubmit(event) {
@@ -98,6 +102,8 @@ function modelformDataSubmit(event) {
     document.getElementById('heroform').reset()
 
 
+  //resetting form after submit
+    document.getElementById('heroform').reset()
         })
         //error from server during submitting data
         .catch(err => {
