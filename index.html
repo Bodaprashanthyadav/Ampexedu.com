@@ -828,8 +828,10 @@
                                 <option value="Master in Digital Marketing">Master in Digital Marketing </option>
                             </select>
                         </div>
-                        <button  class="btn btn-primary" style="width: 100%;"
-                          >Enroll Now</button>
+                        <button  class="btn btn-primary" style="width: 100%;">
+                        <span class="spinner-border spinner-border-sm me-1" style="display: none;" id="spinner"  ></span>
+                        <span   id="loader"> Enroll Now</span>
+                        </button>
                     </form>
                     
                       
@@ -1082,7 +1084,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Bootstrap Modal Form -->
-                    <form id="heroform"  onsubmit="modelformDataSubmit(event)">
+                    <form id="modelform"  onsubmit="modelformDataSubmit(event)">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" name="fullname" class="form-control" id="name"
@@ -1108,8 +1110,11 @@
                                 <option value="Master in Digital Marketing">Master in Digital Marketing</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100" >
-                            Request Course Details</button>
+                        <button type="submit" class="btn btn-primary w-100"  >
+                           
+                            <span class="spinner-border spinner-border-sm me-1" style="display: none;" id="ui-spinner"  ></span>
+                            <span   id="ui-loader">  Request Course Details</span>
+                        </button>
                             
                     </form>
 

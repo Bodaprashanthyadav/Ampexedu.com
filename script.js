@@ -23,14 +23,16 @@ fetch("footer.html")
 
 
 //  hero-section-formdetals and model(popup from) details
-function formDataSubmit(event) {
+  async function formDataSubmit(event) {
     event.preventDefault()
+    loaderFN()
+
     var formdata = new FormData(event.target)
     var formdetails = {}
     for (var [key, value] of formdata)
         formdetails[key] = value
     // console.log(form)
-    fetch('https://ampexedu-backend-server.onrender.com/usersdetails', {
+  await  fetch('https://ampexedu-backend-server.onrender.com/usersdetails', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
 
@@ -38,8 +40,12 @@ function formDataSubmit(event) {
 
     })
         //response from server
+        
         .then(res => res.json())
         .then(data => {
+          loader.innerHTML="Enroll Now"
+          spinner.style.display="none"
+
             console.log(data, "data submitted success")
 
             Swal.fire({
@@ -52,9 +58,7 @@ function formDataSubmit(event) {
             // reset form after submit
              document.getElementById('heroform').reset()
 
-                //resetting form after submit
-    document.getElementById('heroform').reset()
-
+            
 
         })
         //error from server during submitting data
@@ -74,6 +78,8 @@ function formDataSubmit(event) {
 }
 function modelformDataSubmit(event) {
     event.preventDefault()
+     uiLoaderFN()
+
     var formdata = new FormData(event.target)
     var formdetails = {}
     formdata.forEach((value, key) => {
@@ -90,6 +96,9 @@ function modelformDataSubmit(event) {
         //response from server
         .then(res => res.json())
         .then(data => {
+            uiloader.innerHTML=" Request Course Details"
+            uispinner.style.display="none"
+  
             console.log(data, "data submitted success")
             Swal.fire({
                 title: "Thank You!",
@@ -99,11 +108,10 @@ function modelformDataSubmit(event) {
 
             });
     //resetting form after submit
-    document.getElementById('heroform').reset()
+    document.getElementById('modelform').reset()
 
 
-  //resetting form after submit
-    document.getElementById('heroform').reset()
+  
         })
         //error from server during submitting data
         .catch(err => {
@@ -185,5 +193,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// form submit button loader
+var loader=  document.getElementById("loader")
+var  spinner = document.getElementById("spinner")
 
-
+function loaderFN(){
+     spinner.style.display="inline-block"
+    loader.innerHTML="Loading..."
+}
+// model popup form loader
+   var uiloader=  document.getElementById("ui-loader")
+    var  uispinner = document.getElementById("ui-spinner")
+function uiLoaderFN(){
+    
+   uiloader.innerHTML="Loading..."
+   uispinner.style.display="inline-block"
+}
